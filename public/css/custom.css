@@ -1,0 +1,17 @@
+.footer-pages{
+    background-color: whitesmoke;
+    width: 100%;
+}
+.footer-pages a{
+    color: black;
+    text-decoration: none;
+
+}
+#subscriber{
+   
+    background-color: azure;
+}
+#emailid{
+    border-radius: 0px;
+    width: auto;
+}
