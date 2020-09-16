@@ -16,7 +16,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white">
   
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
@@ -190,19 +190,12 @@
                 
             </div>
         </div>
-        <div class="row mt-4">
-            <nav class="w-100">
-                <div class="nav nav-tabs" id="product-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">House Description</a>
-                    <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Comments</a>
-                    <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Rating</a>
-                </div>
-            </nav>
-            <div class="tab-content p-3" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab"> {{ $post->description}}</div>
-                <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab"> </div>
-                <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab"> </div>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-12">
+                <h4></h4>
+                <p class="text-center">{{ $post->description }}</p>
             </div>
+            
         </div>
     </div>
     <div class="container-fluid" id="subscriber">
@@ -265,11 +258,5 @@
     <script src="../plugins/jquery/jquery.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/admin.min.js"></script>
-</body>
-</html>
-
-    <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/admin.min.js"></script> 
 </body>
 </html>
